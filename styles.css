@@ -1,38 +1,73 @@
-#grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    gap: 5px;
-    background-color: green;
-    padding: 5px;
+.grid-container {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(5, 1fr);
+grid-template-areas:
+"item1 item1 item1 item1"
+"item2 item3 item4 item4"
+"item2 item5 item5 item6"
+"item2 item7 item8 item9"
+"item2 item10 item10 item10";
+gap:10px;
 }
 
-#grid div {
-    background-color: green;
-    color: white;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid white;
-    padding: 20px;
+.item1 {
+background: lightblue;
+padding: 20px;
+grid-area: item1;
 }
 
-#grid div:nth-child(1) {
-    grid-column: span 2;
+.item2 {
+background: lightgreen;
+padding: 20px;
+grid-area: item2;
 }
-#grid div:nth-child(2) {
-    grid-row: span 2;
+
+.item3 {
+background: lightcoral;
+padding: 20px;
+grid-area: item3;
 }
-#grid div:nth-child(3), #grid div:nth-child(4) {
-    grid-column: span 1;
+
+.item4 {
+background: lightgoldenrodyellow;
+padding: 20px;
+grid-area: item4;
 }
-#grid div:nth-child(5), #grid div:nth-child(6) {
-    grid-column: span 1;
+
+.item5 {
+background: lightblue;
+padding: 20px;
+grid-area: item5;
 }
-#grid div:nth-child(7), #grid div:nth-child(8), #grid div:nth-child(9) {
-    grid-column: span 1;
+
+.item6 {
+background: lightgreen;
+padding: 20px;
+grid-area: item6;
 }
-#grid div:nth-child(10) {
-    grid-column: span 1;
+
+.item7 {
+background: lightcoral;
+padding: 20px;
+grid-area: item7;
 }
+
+.item8 {
+background: lightgoldenrodyellow;
+padding: 20px;
+grid-area: item8;
+}
+
+.item9 {
+background: lightblue;
+padding: 20px;
+grid-area: item9;
+}
+
+.item10 {
+background: lightgreen;
+padding: 20px;
+grid-area: item10;
+}
+
