@@ -1,73 +1,61 @@
-.grid-container {
-display: grid;
-grid-template-columns: repeat(4, 1fr);
-grid-template-rows: repeat(5, 1fr);
-grid-template-areas:
-"item1 item1 item1 item1"
-"item2 item3 item4 item4"
-"item2 item5 item5 item6"
-"item2 item7 item8 item9"
-"item2 item10 item10 item10";
-gap:10px;
+/*  your css code here. If applicable */
+body {
+  margin: 20px;
+  font-family: Arial, sans-serif;
 }
 
-.item1 {
-background: lightblue;
-padding: 20px;
-grid-area: item1;
+#grid {
+  display: grid;
+  grid-template-columns: repeat(4, 242.5px);
+  grid-template-rows: repeat(5, 124px);
+  gap: 10px;
 }
 
-.item2 {
-background: lightgreen;
-padding: 20px;
-grid-area: item2;
+#grid > div {
+  background-color: green;
+  color: white;
+  font-size: 24px;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
-.item3 {
-background: lightcoral;
-padding: 20px;
-grid-area: item3;
+/* Grid item positioning */
+#grid > div:nth-child(1) {
+  grid-column: span 4 / auto; /* spans 4 columns */
 }
 
-.item4 {
-background: lightgoldenrodyellow;
-padding: 20px;
-grid-area: item4;
+#grid > div:nth-child(2) {
+  grid-row: span 4 / auto; /* spans 4 rows */
 }
 
-.item5 {
-background: lightblue;
-padding: 20px;
-grid-area: item5;
+#grid > div:nth-child(3) {
+  /* default position */
 }
 
-.item6 {
-background: lightgreen;
-padding: 20px;
-grid-area: item6;
+#grid > div:nth-child(4) {
+  grid-column: span 2 / auto; /* spans 2 columns */
 }
 
-.item7 {
-background: lightcoral;
-padding: 20px;
-grid-area: item7;
+#grid > div:nth-child(5) {
+  grid-column: span 2 / auto;
 }
 
-.item8 {
-background: lightgoldenrodyellow;
-padding: 20px;
-grid-area: item8;
+#grid > div:nth-child(6) {
+  /* default position */
 }
 
-.item9 {
-background: lightblue;
-padding: 20px;
-grid-area: item9;
+#grid > div:nth-child(7) {
+  /* default position */
 }
 
-.item10 {
-background: lightgreen;
-padding: 20px;
-grid-area: item10;
+#grid > div:nth-child(8) {
+  /* default position */
 }
 
+#grid > div:nth-child(9) {
+  /* default position */
+}
+
+#grid > div:nth-child(10) {
+  grid-column: span 3 / auto;
+}
