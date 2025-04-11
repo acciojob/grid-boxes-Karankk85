@@ -1,4 +1,4 @@
-/*  your css code here. If applicable */
+=/*  your css code here. If applicable */
 body {
   margin: 20px;
   font-family: Arial, sans-serif;
@@ -57,5 +57,5 @@ body {
 }
 
 #grid > div:nth-child(10) {
-  grid-column: span 3 / auto;
+  grid-column: span 3 / auto;
 }
